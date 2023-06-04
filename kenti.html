@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>odd Numbers</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    
+    h1 {
+      color: #2f6699;
+    }
+    
+    .odd-numbers {
+      margin: 0 auto;
+      max-width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .odd-number {
+      width: 50px;
+      height: 50px;
+      background-color: #9b12d1;
+      color: rgb(13, 20, 7);
+      font-size: 20px;
+      line-height: 50px;
+      margin: 5px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>კენტი რიცხვები,1-დან 100-მდე:</h1>
+  <div class="odd-numbers"></div>
+
+  <script>
+    var oddNumbersContainer = document.querySelector('.odd-numbers');
+
+    for (var i = 1; i <= 100; i += 2) {
+      var oddNumberElement = document.createElement('div');
+      oddNumberElement.classList.add('odd-number');
+      oddNumberElement.textContent = i;
+      oddNumbersContainer.appendChild(oddNumberElement);
+    }
+  </script>
+</body>
+</html>
