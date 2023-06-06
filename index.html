@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Negative Numbers</title>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #negativeNumbers {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+    }
+
+    #negativeNumbers__title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #negativeNumbers__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    #negativeNumbers__item {
+      display: inline-block;
+      background-color: #FF5757;
+      color: #fff;
+      font-size: 18px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+    <h1>Negative Numbers</h1>
+  <div id="negativeNumbers"></div>
+
+
+
+
+  <script>
+    const numbers = [1, 2, -9, -56, 34, 77, -90, -11, -1, -2, -5, -9];
+    let i = 0;
+    let negativeNumbers = '';
+
+    while (i < numbers.length){
+      if (numbers[i] < 0) {
+        negativeNumbers += numbers[i] + ' ';}
+      i++;}
+
+    const negativeNumbersElement = document.getElementById('negativeNumbers');
+    negativeNumbersElement.textContent = negativeNumbers.trim();
+  </script>
+</body>
+</html>
