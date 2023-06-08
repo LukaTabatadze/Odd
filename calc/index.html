@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+ <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>მარტივი კალკულატორი</h2>
+    <div class="row">
+      <div class="col-md-9 num1">
+        <input type="number" id="num1" class="form-control" placeholder="შეიყვანეთ რიცხვი">
+      </div> 
+      <div class="col-md-9 mt-5 num2">
+        <input type="number" id="num2" class="form-control" placeholder="შეიყვანეთ რიცხვი">
+      </div>
+      <div class="box d-block">
+        <div class="row">
+      <div class="col-md-3 mb-4">
+        <button onclick="calculate('+')" class="btn">+</button>
+      </div>
+      <div class="col-md-3 mb-4">
+        <button onclick="calculate('-')" class="btn">-</button>
+    </div>
+</div><div class="row">
+    <div class="col-md-3 mb-4">
+        <button onclick="calculate('*')" class="btn">*</button>
+      </div>
+      <div class="col-md-3 mb-4">
+        <button onclick="calculate('/')" class="btn">/</button>
+      </div>
+    </div></div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>პასუხი: <span id="პასუხი"></span></h3>
+      </div>
+    </div>
+  </div>
+
+ 
+</body>
+</html>
